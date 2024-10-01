@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE Html>
+<html>
+    <head>
+        <title>Task Manager</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="{% url "home" %}">Home</a></li>
+                    {% comment %} <li><a href="{% url "login" %}">Login</a></li> {% endcomment %}
+                    <li><a href="{% url "signup" %}">Register</a></li>
+                </ul>
+            </nav>
+        </header>
+        {% block content %}
+        {% endblock  %}
+    </body>
+</html>

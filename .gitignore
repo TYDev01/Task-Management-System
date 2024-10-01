@@ -4,3 +4,4 @@ app/__pycache__
 app/migrations
 app/__init__.py
 db.sqlite3
+.env
