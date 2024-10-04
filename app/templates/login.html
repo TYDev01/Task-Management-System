@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Login</h2>
+    <form>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type='submit'>login</button>
+    </form>
+    {% if form.non_field_error %}
+        <div style="color: red;">
+            {{ form.non_field_error }}
+        </div>
+    {% endif %}
+{% endblock  %}
